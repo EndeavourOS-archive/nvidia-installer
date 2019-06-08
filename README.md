@@ -1,5 +1,5 @@
 # Nvidia Installer
-Setup nvidia drivers in Antergos
+Setup nvidia drivers in EndeavourOS
 
 ## 396.45 (nvidia)
 
