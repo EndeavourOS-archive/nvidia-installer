@@ -50,8 +50,7 @@ BOLD = '\033[1m'
 
 DEVICES = {
     "nvidia" : [],
-    "nvidia-390xx" : [],
-    "nvidia-340xx" : []
+    "nvidia-390xx" : []
 }
 
 CLASS_ID = "0x03"
@@ -61,7 +60,6 @@ PACKAGES = {
     "nouveau": ["xf86-video-nouveau", "mesa"],
     "nvidia": ["nvidia", "libvdpau"],
     "nvidia-390xx": ["nvidia-390xx", "libvdpau"],
-    "nvidia-340xx": ["nvidia-340xx", "libvdpau"],
     "bumblebee": ["bumblebee", "mesa", "xf86-video-intel",
                   "nvidia", "virtualgl", "nvidia-settings", "bbswitch"]}
 
@@ -69,14 +67,12 @@ PACKAGES_LTS = {
     "nouveau": [],
     "nvidia": ["nvidia-lts"],
     "nvidia-390xx": ["nvidia-390xx-lts"],
-    "nvidia-340xx": ["nvidia-340xx-lts"],
     "bumblebee": ["nvidia-lts", "bbswitch-dkms"]}
 
 PACKAGES_X86_64 = {
     "nouveau": ["lib32-mesa"],
     "nvidia": ["lib32-nvidia-utils", "lib32-libvdpau"],
     "nvidia-390xx": ["lib32-nvidia-390xx-utils", "lib32-libvdpau"],
-    "nvidia-340xx": ["lib32-nvidia-340xx-utils", "lib32-libvdpau"],
     "bumblebee": ["lib32-nvidia-utils", "lib32-virtualgl", "lib32-mesa"]}
 
 CONFLICTS = {
