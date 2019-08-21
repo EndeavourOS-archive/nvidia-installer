@@ -26,6 +26,8 @@
 #  You should have received a copy of the GNU General Public License
 #  along with Antergos; If not, see <http://www.gnu.org/licenses/>.
 
+# 2019 Modified for EndeavourOS.
+
 """ nvidia-installer eases nvidia video driver installation """
 
 import argparse
@@ -35,7 +37,7 @@ import logging
 import subprocess
 import sys
 
-VERSION = "1.18"
+VERSION = "2.0"
 TEST = True
 
 LOG_FILE = "/tmp/nvidia-installer.log"
@@ -388,7 +390,7 @@ def fix_mkinitcpio():
 
 def parse_options():
     """ Parse command line options """
-    desc = "Antergos Nvidia Installer v{0}".format(VERSION)
+    desc = "EndeavourOS Nvidia Installer v{0}".format(VERSION)
     parser = argparse.ArgumentParser(description=desc)
 
     parser.add_argument(
@@ -453,7 +455,7 @@ def setup_logging(cmd_line):
         stream_handler.setFormatter(formatter)
         logger.addHandler(stream_handler)
 
-    log_info("Antergos Nvidia Installer v{}".format(VERSION))
+    log_info("EndeavourOS Nvidia Installer v{}".format(VERSION))
     log_info("All logs will be stored in {}".format(LOG_FILE))
 
 
