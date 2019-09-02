@@ -183,7 +183,7 @@ def install(driver):
                     log_error(msg.format(conflict, err.output.decode()))
                     return False
 
-    log_info("Downloading and installing driver packages, please wait...")
+    log_info("Downloading and installing driver packages, please wait as this may take a few minutes...")
     cmd = ["pacman", "-Sqy", "--noconfirm", "--noprogressbar"]
     cmd.extend(packages)
     if TEST:
